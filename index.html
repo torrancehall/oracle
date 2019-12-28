@@ -4,19 +4,35 @@
 <head>
   <title>j</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
 </head>
 
 <body>
   <!-- this is the main content-->
-  <div class="wrapper">
+
     <h2 class="index-h2"> torrance hall </h2>
     <p>journal</p>
-    <img class="img-apple" src="img/1.jpg" alt="apple">
-    <img class="img-door" src="img/door.jpg" alt="door">
+    <div id="photo" class="ui-widget-content">
+      <img class="img-apple" src="img/1.jpg" alt="apple">
+    </div>
+    <div id="photo2" class="ui-widget-content">
+      <img class="img-door" src="img/door.jpg" alt="door">
+    </div>
     <img class="img-girls" src="img/girls.jpg" alt="friends">
 
-  </div>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script>
+    $( function() {
+      $("#photo, #photo2").draggable();
+    });
+  </script>
+
+
+
 </body>
 
 </html>
